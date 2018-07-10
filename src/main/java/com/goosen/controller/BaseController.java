@@ -6,26 +6,19 @@ package com.goosen.controller;
 //import com.xiaoleilu.hutool.log.Log;
 //import com.xiaoleilu.hutool.log.LogFactory;
 //import org.apache.shiro.authz.UnauthorizedException;
-import org.springframework.beans.propertyeditors.StringTrimmerEditor;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.InitBinder;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.github.pagehelper.PageInfo;
 import com.goosen.commons.model.response.BaseCudRespData;
-import com.goosen.commons.model.response.product.ProductRespData;
 import com.goosen.commons.utils.BeanUtil;
 import com.goosen.commons.utils.CommonUtil;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
 public class BaseController {
 

@@ -13,8 +13,15 @@
      <dubbo:registry protocol="zookeeper" address="${dubbo.zookeeper.address}"/>
      
      <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-     <dubbo:reference  id="userService" interface="com.goosen1.service.UserService" check="false"/>
+     <dubbo:reference  id="userService" interface="com.goosen.commons.service.UserService" check="false"/>
      
-     <dubbo:reference  id="dictService" interface="com.goosen1.service.DictService" check="false"/>
+     <dubbo:reference  id="menuService" interface="com.goosen.commons.service.MenuService" check="false"/>
+     <dubbo:reference  id="ordersProductService" interface="com.goosen.commons.service.OrdersProductService" check="false"/>
+     <dubbo:reference  id="ordersService" interface="com.goosen.commons.service.OrdersService" check="false"/>
+     <dubbo:reference  id="productAttrService" interface="com.goosen.commons.service.ProductAttrService" check="false"/>
+     <dubbo:reference  id="productService" interface="com.goosen.commons.service.ProductService" check="false"/>
+     <dubbo:reference  id="roleMenuService" interface="com.goosen.commons.service.RoleMenuService" check="false"/>
+     <dubbo:reference  id="roleService" interface="com.goosen.commons.service.RoleService" check="false"/>
+     <dubbo:reference  id="userRoleService" interface="com.goosen.commons.service.UserRoleService" check="false"/>
      
     </beans>
